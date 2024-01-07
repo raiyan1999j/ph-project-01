@@ -171,11 +171,13 @@ nav div:nth-child(2){
     text-align:center;
     background-color:#FFF8F3;
 }
-.aboutArea .row h2{
+.aboutArea .row h2,
+.blogArea .row h2{
     font-size:35px;
     font-weight:700;
 }
-.aboutArea .textBox{
+.aboutArea .textBox,
+.blogArea .textBox{
     margin:30px 0;
     font-size:18px;
     font-weight: 400;
@@ -188,4 +190,35 @@ nav div:nth-child(2){
 }
 .aboutContact div{
     margin-right:50px;
+}
+/* ============= */
+/* blogArea */
+/* ============= */
+.blogArea h2,
+.blogArea .textBox{
+    text-align:center;
+    padding:0 115px;
+}
+.blogBox{
+    display: flex;
+    justify-content: space-between;
+}
+.blogBox div{
+    width: 267px;
+}
+.blogImg{
+    padding:30px 0 30px 30px;
+}
+.blogBox h4{
+    font-size:20px;
+    font-weight: 700;
+    color: #181818;
+    padding:0 0 30px 30px;
+}
+.blogText{
+    font-size:16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding:0 33px;
+    color:#757575;
 }
