@@ -134,7 +134,8 @@ nav div:nth-child(2){
     margin:20px 0 30px 0;
     color:#757575;
 }
-.headerBtn .btn{
+.headerBtn .btn,
+.portfolioArea .btn{
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
@@ -172,7 +173,8 @@ nav div:nth-child(2){
     background-color:#FFF8F3;
 }
 .aboutArea .row h2,
-.blogArea .row h2{
+.blogArea .row h2,
+.portfolio .row h2{
     font-size:35px;
     font-weight:700;
 }
@@ -221,4 +223,60 @@ nav div:nth-child(2){
     line-height: 28px;
     padding:0 33px;
     color:#757575;
+}
+/* ============= */
+/* portfolioArea */
+/* ============= */
+.portfolioArea .row h2:not(.portfolioArea .row .col h2){
+    text-align:center;
+    font-size:35px;
+    text-transform: capitalize;
+}
+.portfolioArea .row .col h2,
+.portfolioArea .row h3{
+    font-size: 30px;
+    font-weight: 700;
+    color:#474747;
+    text-transform: capitalize;
+}
+.portfolioArea .col{
+    margin-bottom:30px;
+}
+.portfolioArea .row h3{
+    font-size:25px;
+    margin:30px 0 10px 0;
+}
+.portfolioArea .row h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+.portfolioArea .textBox{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #757575;
+    padding:0 56px 0 0;
+}
+.portfolioArea .w-511{
+    width: 511px;
+    margin-right:71px;
+}
+.portfolioArea .row .col:nth-child(2){
+    margin-right:0px;
+}
+.portfolioArea .w-511::after{
+    content:'';
+    display: table;
+    height: 1px;
+    width:100%;
+    margin-top:30px;
+    background-color:#D1D1D1;
+}
+.portfolioArea .row:nth-child(4) .w-511::after{
+    display:none;
+}
+.portfolioArea .portfolioBtn{
+    text-align: center;
+    margin-top: 50px;
 }
