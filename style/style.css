@@ -22,6 +22,14 @@ a{
     width:1140px;
     margin:130px auto;
 }
+.row::after,
+.row::before{
+    content:'';
+    display:table;
+}
+.row::after{
+    clear:both;
+}
 .col{
     float:left;
     display: block;
@@ -174,9 +182,11 @@ nav div:nth-child(2){
 }
 .aboutArea .row h2,
 .blogArea .row h2,
-.portfolio .row h2{
+.portfolio .row h2,
+.footerArea .row h2{
     font-size:35px;
     font-weight:700;
+    text-transform: capitalize;
 }
 .aboutArea .textBox,
 .blogArea .textBox{
@@ -279,4 +289,72 @@ nav div:nth-child(2){
 .portfolioArea .portfolioBtn{
     text-align: center;
     margin-top: 50px;
+}
+/* ============= */
+/* footerArea */
+/* ============= */
+.footerArea{
+    background-color:#FFF8F3;
+}
+.footerArea::before,
+.footerArea::after{
+    display: table;
+    content:'';
+}
+.footerArea::after{
+    clear:both;
+}
+.footerArea .row{
+    display:flex;
+    justify-content: space-between;
+    padding:130px 0;
+}
+.footerArea .row div:nth-child(2) h2{
+    padding-left: 117px;
+}
+.footerArea .textBox{
+    width: 562px;
+    margin:20px 0 30px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footerList li{
+    float:left;
+    margin-right:24px;
+}
+.footerList li:nth-child(3){
+    margin-right:0px;
+}
+.footerArea .footerForm{
+    margin-top: 28px;
+    padding-left:117px;
+}
+.footerForm input:not(input[type="button"]){
+    display: block;
+    width:461px;
+    height:64px;
+    border:none;
+    margin-bottom: 24px;
+}
+.footerForm input:nth-child(3){
+    margin-bottom:0px;
+}
+.footerForm input::placeholder,
+.footerArea textarea{
+    font-size:16px;
+    font-weight:400;
+    line-height: 28px;
+    color: #757575;
+    padding:18px 30px;
+}
+.footerArea textarea{
+    height:180px;
+    width:461px;
+    resize:none;
+    border:none;
+    margin-bottom:24px;
+}
+.footerArea .btn{
+    font-size: 20px;
+    font-weight: 700;
 }
